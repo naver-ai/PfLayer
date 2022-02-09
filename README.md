@@ -6,7 +6,7 @@
 
 
 ### Updates
-- **02.09.2002** Code review will be uploaded soon (due to internal code review)
+- **02.09.2002** Code will be uploaded soon (due to internal code review)
 - **02.06.2022** Initial update 
 
 ### Abstract
