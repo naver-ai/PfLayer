@@ -1,11 +1,12 @@
 ## Learning Features with Parameter-Free Layers (ICLR 2022)
 
-**Dongyoon Han, YoungJoon Yoo, Beomyoung Kim, Byeongho Heo** | [Paper](https://openreview.net/pdf?id=bCrdi4iVvv)
+**Dongyoon Han, YoungJoon Yoo, Beomyoung Kim, Byeongho Heo** | [Paper](https://arxiv.org/pdf/2202.02777.pdf)
 
 **NAVER AI Lab, NAVER CLOVA** 
 
 
 ### Updates
+- **02.09.2002** Code review will be uploaded soon (due to internal code review)
 - **02.06.2022** Initial update 
 
 ### Abstract
