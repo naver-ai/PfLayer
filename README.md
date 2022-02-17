@@ -54,15 +54,15 @@ Extensive experimental analyses based on layer-level studies with fully-trained 
 Network | Img size | Params. (M) | FLOPs (G) | GPU (ms) | Top-1 (%) | Top-5 (%)
 -- | :--: | :--:  | :--: | :--:  | :--: | :--: 
 `R50`            | 224x224 | 25.6 | 4.1 | 8.7 | 76.2 | 93.8
-[`R50-max`]()    | 224x224 | 14.2 | 2.2 | 6.8 | 74.3 | 92.0  
-[`R50-hybrid`]() | 224x224 | 17.3 | 2.6 | 7.3 | 77.1 | 93.1 
+[`R50-max`](https://drive.google.com/file/d/1MoCdVLPau4XuI0BVGEwDkiwibpybqWTX/view?usp=sharing)    | 224x224 | 14.2 | 2.2 | 6.8 | 74.3 | 92.0  
+[`R50-hybrid`](https://drive.google.com/file/d/1CyajEQUfWo9oetqcIhexVjfRXU-iGHk1/view?usp=sharing) | 224x224 | 17.3 | 2.6 | 7.3 | 77.1 | 93.1 
 
 
 Network | Img size | Throughputs | Vanilla | +CutMix | +DeiT
 -- | :--: | :--:  | :--: | :--:  | :--:
 `R50`          | 224x224 | 962 / **112** | **76.2** | 77.6 | 78.8
-[`ViT-S-max`]()    |224x224 |  763 / 96 | 74.2 | 77.3 | 79.8
-[`PiT-S-max`]()     |224x224 |  **1000** / 92 |75.7 | **78.1** | **80.1**
+[`ViT-S-max`](https://drive.google.com/file/d/19lfagLJDXWvVHcb8Qm_U4_A_Kr7qYLv7/view?usp=sharing)    |224x224 |  763 / 96 | 74.2 | 77.3 | 79.8
+[`PiT-S-max`](https://drive.google.com/file/d/1S9JJM2WGtDtpo-6Me7Ak74nJOlOeBKeH/view?usp=sharing)     |224x224 |  **1000** / 92 |75.7 | **78.1** | **80.1**
 
 #### Model load & evaluation
 Example code of loading ``resnet50_hybrid`` without ``timm``:
