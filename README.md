@@ -18,7 +18,7 @@ Extensive experimental analyses based on layer-level studies with fully-trained 
 #### 1. Depthwise convolution is replaceble with a parameter-free operation:
 <img src=https://user-images.githubusercontent.com/31481676/152579508-77401a51-7c86-401a-a050-b2033e2e9498.png width=760>
 
-#### 2. Parameter-free operations are frequently searched in normal building blocks by NAS:
+#### 2. Parameter-free operations are frequently searched in normal building blocks by NAS (when searching with individual cells):
 <img src=https://user-images.githubusercontent.com/31481676/152579742-be646019-128d-4771-9d00-ad5a645c128b.png width=760>
 
 #### 3. R50-hybrid (with the eff-bottlenecks) yields a localizable features (see the Grad-CAM visualizations):
