@@ -6,6 +6,7 @@
 
 
 ### Updates
+- **03.23.2022** Performance of ViT and PiT has been updated
 - **02.11.2022** Code has been uploaded
 - **02.06.2022** Initial update 
 
@@ -61,8 +62,8 @@ Network | Img size | Params. (M) | FLOPs (G) | GPU (ms) | Top-1 (%) | Top-5 (%)
 Network | Img size | Throughputs | Vanilla | +CutMix | +DeiT
 -- | :--: | :--:  | :--: | :--:  | :--:
 `R50`          | 224x224 | 962 / **112** | **76.2** | 77.6 | 78.8
-[`ViT-S-max`](https://drive.google.com/file/d/19lfagLJDXWvVHcb8Qm_U4_A_Kr7qYLv7/view?usp=sharing)    |224x224 |  763 / 96 | 74.2 | 77.3 | 79.8
-[`PiT-S-max`](https://drive.google.com/file/d/1S9JJM2WGtDtpo-6Me7Ak74nJOlOeBKeH/view?usp=sharing)     |224x224 |  **1000** / 92 |75.7 | **78.1** | **80.1**
+[`ViT-S-max`](https://drive.google.com/file/d/19lfagLJDXWvVHcb8Qm_U4_A_Kr7qYLv7/view?usp=sharing)    |224x224 |  763 / 96 | 74.2 | 77.3 | 80.0
+[`PiT-S-max`](https://drive.google.com/file/d/1S9JJM2WGtDtpo-6Me7Ak74nJOlOeBKeH/view?usp=sharing)     |224x224 |  **1000** / 92 |75.7 | **78.1** | **80.8**
 
 #### Model load & evaluation
 Example code of loading ``resnet50_hybrid`` without ``timm``:
