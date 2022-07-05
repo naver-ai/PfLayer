@@ -6,6 +6,7 @@
 
 
 ### Updates
+- **07.06.2022** Improved ResNet50 pretrained on ImageNet-1k are added
 - **03.23.2022** Performance of ViT and PiT has been updated
 - **02.11.2022** Code has been uploaded
 - **02.06.2022** Initial update 
@@ -51,12 +52,16 @@ Extensive experimental analyses based on layer-level studies with fully-trained 
     apex == 0.1.0
 
 #### Pretrained models
+- `+` denotes the models trained for longer epochs
 
 Network | Img size | Params. (M) | FLOPs (G) | GPU (ms) | Top-1 (%) | Top-5 (%)
 -- | :--: | :--:  | :--: | :--:  | :--: | :--: 
 `R50`            | 224x224 | 25.6 | 4.1 | 8.7 | 76.2 | 93.8
 [`R50-max`](https://drive.google.com/file/d/1MoCdVLPau4XuI0BVGEwDkiwibpybqWTX/view?usp=sharing)    | 224x224 | 14.2 | 2.2 | 6.8 | 74.3 | 92.0  
 [`R50-hybrid`](https://drive.google.com/file/d/1CyajEQUfWo9oetqcIhexVjfRXU-iGHk1/view?usp=sharing) | 224x224 | 17.3 | 2.6 | 7.3 | 77.1 | 93.1 
+||||||
+[`R50-max+`](https://drive.google.com/file/d/1TQfwMXENn7s78Myc58svKVpHi5OVsdGX/view?usp=sharing)    | 224x224 | 14.2 | 2.2 | 6.8 | 75.5 | 92.1  
+[`R50-hybrid+`](https://drive.google.com/file/d/1f5fOwEItFITqzofvQ6d-kLLOTs-c1k3o/view?usp=sharing) | 224x224 | 17.3 | 2.6 | 7.3 | 78.0 | 93.5 
 
 
 Network | Img size | Throughputs | Vanilla | +CutMix | +DeiT
