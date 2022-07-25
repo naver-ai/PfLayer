@@ -6,6 +6,7 @@
 
 
 ### Updates
+- **07.25.2022** The pretrained weights of ViT and PiT are updated (model sizes are minimized)
 - **07.06.2022** Improved ResNet50 pretrained on ImageNet-1k are added
 - **03.23.2022** Performance of ViT and PiT has been updated
 - **02.11.2022** Code has been uploaded
