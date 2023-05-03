@@ -17,18 +17,9 @@
 Trainable layers such as convolutional building blocks are the standard network design choices by learning parameters to capture the global context through successive spatial operations. When designing an efficient network, trainable layers such as the depthwise convolution is the source of efficiency in the number of parameters and FLOPs, but there was little improvement to the model speed in practice. This paper argues that **simple built-in parameter-free operations can be a favorable alternative to the efficient trainable layers** replacing spatial operations in a network architecture. We aim to **break the stereotype of organizing the spatial operations of building blocks into trainable layers.** 
 Extensive experimental analyses based on layer-level studies with fully-trained models and neural architecture searches are provided to investigate whether parameter-free operations such as the max-pool are functional. The studies eventually give us **a simple yet effective idea for redesigning network architectures**, where the parameter-free operations are heavily used as the main building block without sacrificing the model accuracy as much. Experimental results on the ImageNet dataset demonstrate that the network architectures with parameter-free operations could enjoy the advantages of further efficiency in terms of model speed, the number of the parameters, and FLOPs.
 
-### Some Analyses in The Paper
-#### 1. Depthwise convolution is replaceble with a parameter-free operation:
-<img src=https://user-images.githubusercontent.com/31481676/152579508-77401a51-7c86-401a-a050-b2033e2e9498.png width=760>
-
-#### 2. Parameter-free operations are frequently searched in normal building blocks by NAS (when searching with individual cells):
-<img src=https://user-images.githubusercontent.com/31481676/152579742-be646019-128d-4771-9d00-ad5a645c128b.png width=760>
-
-#### 3. R50-hybrid (with the eff-bottlenecks) yields a localizable features (see the Grad-CAM visualizations):
-<img src=https://user-images.githubusercontent.com/31481676/152579400-05b95b4b-a915-4f38-8639-4b0f4080c532.png width=840>
-
-
 ### Our Proposed Models
+- Use our ResNet/ViT-bsaed models instead of using ResNet50!
+
 #### 1. Schematic illustration of our models
 <img src=https://user-images.githubusercontent.com/31481676/152576171-7fa44cbf-ccfc-4414-9ff1-32e9e6b85799.png width=720>
 
@@ -109,6 +100,17 @@ Our **ResNet-based models** can be trained with any PyTorch training codes; we r
 
 
       python3 -m torch.distributed.launch --nproc_per_node=4 --use_env main.py --model vit_s_max --batch-size 256 --data-path ./ImageNet_dataset/
+
+
+### Some Analyses in The Paper
+#### 1. Depthwise convolution is replaceble with a parameter-free operation:
+<img src=https://user-images.githubusercontent.com/31481676/152579508-77401a51-7c86-401a-a050-b2033e2e9498.png width=760>
+
+#### 2. Parameter-free operations are frequently searched in normal building blocks by NAS (when searching with individual cells):
+<img src=https://user-images.githubusercontent.com/31481676/152579742-be646019-128d-4771-9d00-ad5a645c128b.png width=760>
+
+#### 3. R50-hybrid (with the eff-bottlenecks) yields a localizable features (see the Grad-CAM visualizations):
+<img src=https://user-images.githubusercontent.com/31481676/152579400-05b95b4b-a915-4f38-8639-4b0f4080c532.png width=840>
 
 
 
